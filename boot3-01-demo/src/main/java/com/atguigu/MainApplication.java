@@ -7,6 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MainApplication.class,args);
+        var ioc = SpringApplication.run(MainApplication.class, args);
+        String[] beanDefinitionNames = ioc.getBeanDefinitionNames();
+        for (String beanDefinitionName : beanDefinitionNames) {
+            System.out.println(beanDefinitionName);
+        }
     }
 }
