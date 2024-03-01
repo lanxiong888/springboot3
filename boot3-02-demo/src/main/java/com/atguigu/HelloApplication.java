@@ -1,5 +1,6 @@
 package com.atguigu;
 
+import com.atguigu.boot.bean.Person;
 import com.atguigu.boot.bean.Sheep;
 import com.atguigu.boot.bean.User;
 import org.springframework.boot.SpringApplication;
@@ -27,11 +28,17 @@ public class HelloApplication {
         for (String bean : beans) {
             System.out.println(bean);
         }
-//
 //        Pig bean = ioc.getBean(Pig.class);
 //        System.out.println(bean);
         Sheep sheep = ioc.getBean(Sheep.class);
         System.out.println(sheep);
+        Person bean = ioc.getBean(Person.class);
+        System.out.println(bean);
+
+        Person person = ioc.getBean(Person.class);
+        System.out.println("person:"+person);
+        String string = person.getChild().getStr().toString();
+        System.out.println(string);
     }
 
 }
