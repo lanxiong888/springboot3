@@ -1,0 +1,36 @@
+person:
+---
+  name: 张三
+  age: 21
+  birthday: 2010/12/12 12:12:12
+  like: false
+  child:
+    name: "李四\n123"
+    age: 22
+    str:
+      - |
+        dskfsd
+      - >
+        sdkfjskldjfklsdjfksdj
+        sdkfjklsdjfk
+--- #下面是一个单独文档
+dogs:
+  - name: '小黑\n234'
+    age: 23
+  - name: 小花
+    age: 23
+cats:
+  A1:
+    id: 1
+    name: 小红
+    age: 21
+  B1:
+    id: 2
+    name: 小绿
+    age: 22
+
+
+
+
+
+
