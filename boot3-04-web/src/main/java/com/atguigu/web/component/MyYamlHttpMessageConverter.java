@@ -1,4 +1,4 @@
-package com.atguigu.web.myconfig;
+package com.atguigu.web.component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
